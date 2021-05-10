@@ -1,23 +1,127 @@
 @font-face
 {
-    src: url(static/Raleway-Regular.ttf);
-    font-family: raleway;
-    src: url(static/Raleway-SemiBold.ttf);
-    font-family: raleway-semibold;
-
+    font-family: "raleway";
+    src: url("static/Raleway-Regular.ttf"), url("static/Raleway-ExtraLight.ttf"), url("static/Raleway-ExtraLightItalic.ttf"), url("static/Raleway-Italic.ttf"), url("static/Raleway-Light.ttf"), url("static/Raleway-LightItalic.ttf"), url("static/Raleway-Medium.ttf"), url("static/Raleway-MediumItalic.ttf"), url("static/Raleway-SemiBold.ttf"), url("static/Raleway-SemiBoldItalic.ttf"), url("static/Raleway-Thin.ttf"), url("static/Raleway-ThinItalic.ttf");
 }
 body
 {
-    font-family: raleway;
+    font-family: "raleway";
     width: 100%;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin:0px;
+    padding: 50px;
+    
 }
-/*début mise en page filtres*/
+/*début mise en page header*/
+#navheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#groupe1
+{
+    display: flex;
+}
+#groupe1 ul
+{
+    display: flex;
+}
+#groupe1 ul li
+{
+    list-style: none;
+    margin-left: 70px;
+    
+}
+#groupe1 ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+#groupe1 button
+{
+    margin-left: 70px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    color: #0065FC;
+    font-size: 16px;
+}
+#logosvg
+{
+    height: 50px;
+}
+/*fin mise en page header*/
+
+/*début mise en page bandeausearch*/
+/*début mise en page bandeausearch titres*/
+#bandeausearch h1
+{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+#bandeausearch h2
+{
+margin-top: -10px;
+font-size: 16px;
+font-weight: normal;
+}
+
+/*fin mise en page bandeausearch titre*/
+
+/*début mise en page barre de recherche*/
+#searchbar
+{
+    margin-bottom: 35px;
+    margin-top: 25px;
+    border: solid;
+    border-color: #F2F2F2;
+    border-width: 1px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 390px;
+}
+#searchbar label
+{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+}
+#searchbar div img
+{
+    width: 20px;
+    margin-right: 5px;
+}
+#searchbar input 
+{
+    height: 50px;
+    width: 235px;
+    border: none;
+}
+#searchbar button
+{
+    height: 50px;
+    width: 135px;
+    background-color: #0065FC;
+    color : white;
+    border : none;
+    border-radius: 0px 20px 20px 0px;
+}
+/*fin mise en page barre de recherche */
+
+/*début mise en page boutons filtres*/
 #barrefiltres
 {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 45px;
 }
 #filtres
     {
@@ -37,7 +141,7 @@ body
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    flex-wrap: ;
+ 
     border-color: #F2F2F2;
     background-color: white;
     box-shadow: none;
@@ -70,4 +174,69 @@ body
     font-size: 20px;
     margin-left: 15px;
 }
-/*fin mise en page filtres*/
+/*fin mise en page boutons filtres*/
+
+/*début mise en page info*/
+#info
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+#info img
+{
+    width: 20px;
+    margin-right: 14px;
+}
+/*fin de la mise en pafe info*/
+/*fin mise en page bandeausearch*/
+
+/*mise en page conatainer*/
+#containerflex
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+/*début de la section hébergement*/
+#hébergement
+{
+    background-color: #F2F2F2;
+    max-width: 75%;
+    min-width: 70%;
+}
+#mostpopular
+{
+    background-color: #F2F2F2;
+    max-width: 25%;
+}
+/*fin de la section hébergement*/
+
+/*début footer*/
+#footer 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+footer
+{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 20px;
+
+}
+footer section
+{
+    margin-right: 250px;
+}
+#footer ul
+{
+    padding: 0;
+    
+}
+#footer li
+{
+    list-style: none;
+}
+/*fin footer*/
