@@ -1,0 +1,73 @@
+@font-face
+{
+    src: url(static/Raleway-Regular.ttf);
+    font-family: raleway;
+    src: url(static/Raleway-SemiBold.ttf);
+    font-family: raleway-semibold;
+
+}
+body
+{
+    font-family: raleway;
+    width: 100%;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+/*début mise en page filtres*/
+#barrefiltres
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row
+    }
+#barrefiltres h3
+{
+    font-weight: bolder;
+}
+
+.bf
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: ;
+    border-color: #F2F2F2;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 7px;
+    text-align: center;
+    margin-left: 25px;
+    
+}
+.imgb
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-left: -8px;
+}
+.iconfiltre
+{
+    width: 20px;
+    height: 20px;
+}
+.textb
+{
+    font-size: 20px;
+    margin-left: 15px;
+}
+/*fin mise en page filtres*/
