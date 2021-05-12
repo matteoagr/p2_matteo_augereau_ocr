@@ -12,33 +12,36 @@ body
     
 }
 /*début mise en page header*/
-#navheader
+header /*container header*/
+{
+    width: 100%;
+}
+#navheader /*container niveau 2 contenant les éléments de navigations*/
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#groupe1
+#groupe1 /*contient ul et button s'inscrire*/
 {
     display: flex;
 }
-#groupe1 ul
+#groupe1 ul /*contient li*/
 {
     display: flex;
 }
-#groupe1 ul li
+#groupe1 ul li /*li header classique*/
 {
     list-style: none;
     margin-left: 70px;
-    
 }
-#groupe1 ul li a
+#groupe1 ul li a /*liens des li*/
 {
     text-decoration: none;
     color: black;
     font-size: 16px;
 }
-#groupe1 button
+#groupe1 button /*button inscription*/
 {
     margin-left: 70px;
     border: none;
@@ -47,21 +50,26 @@ body
     color: #0065FC;
     font-size: 16px;
 }
-#logosvg
+#logosvg /*logo*/
 {
     height: 50px;
 }
 /*fin mise en page header*/
 
 /*début mise en page bandeausearch*/
+
+#bandeausearch /*container bandeau search*/
+{
+    width: 100%;
+}
 /*début mise en page bandeausearch titres*/
-#bandeausearch h1
+#bandeausearch h1 /*titre h1 bandeausearch*/
 {
     font-size: 25px;
-    font-weight:bold;
+    font-weight:bold; /*non fonctionnel*/
 }
 
-#bandeausearch h2
+#bandeausearch h2 /*titre h2 bandeausearch*/
 {
 margin-top: -10px;
 font-size: 16px;
@@ -71,7 +79,7 @@ font-weight: normal;
 /*fin mise en page bandeausearch titre*/
 
 /*début mise en page barre de recherche*/
-#searchbar
+#searchbar 
 {
     margin-bottom: 35px;
     margin-top: 25px;
@@ -180,7 +188,7 @@ font-weight: normal;
 #info
 {
     display: flex;
-    align-items: center;
+    align-items:center;
     margin-bottom: 45px;
 }
 #info img
@@ -195,24 +203,25 @@ font-weight: normal;
 #containerflex
 {
    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap-reverse;
+   justify-content: flex-start;
 }
 /*début de la section hébergement*/
 #hébergement
 {
     background-color: #F2F2F2;
-    max-width: 65%;
-    min-width: 70%;
+    max-width: 900px;
+    min-width: 300px;
     border-radius: 20px;
-    padding: 7px;
+    padding: 35px;
 }
 #carteshebergement
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+    justify-content:space-evenly;
+    
 }
 #carteshebergement img
 {
@@ -226,16 +235,14 @@ font-weight: normal;
 #carteshebergement h1
 {
     margin-top: 3px;
-    margin-left: 15px;
     margin-bottom: 3px;
     font-size: 15px;
 }
 #carteshebergement p
 {
     margin-top: 3px;
-    margin-left: 15px;
-    font-size: 15px;
-    margin-bottom: ;
+    font-size: 16px;
+    margin-bottom: 3px;
 }
 .lodge
 {
@@ -243,10 +250,8 @@ font-weight: normal;
     background-color: white;
     width: 248px;
     border-radius: 20px;
-    margin-right: 16px;
-    margin-left: 16px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 35px;
+
 }
 .insection1
 {
@@ -259,6 +264,30 @@ font-weight: normal;
 /*fin de la section hébergement*/
 
 /*début section popular*/
+#mostpopular
+{
+    background-color:  #F2F2F2;
+    padding: 35px;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 25%;
+    min-width: 300px;
+}
+#cartespopular
+{
+  
+}
+.popular
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    margin-bottom: 35px;
+}
+.insection2
+{
+    display: flex;
+}
 #cartespopular img
 {
     width: 135px;
@@ -272,7 +301,6 @@ font-weight: normal;
 #cartespopular p
 {
     margin-top: 3px;
-    margin-left: 15px;
     font-size: 15px;
     margin-bottom: ;
 }
@@ -283,6 +311,7 @@ font-weight: normal;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 footer
 {
