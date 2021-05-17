@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 
+
 <body>
     <header>
         <nav id="navheader">
             <a href="index.html" id="logohome">
                 <img src="images/logo/Reservia.svg" alt="logo reservia" id="logosvg">
             </a>
-            <div id="groupe1">
-                <ul>
-                    <li> <a href="#"> Hébergements</a></li>
-                    <li><a href="#"> Activités</a></li>
-                </ul>
-                <button>S'inscrire</button>
+            <div id="groupe1"></div>
+            <ul>
+                <li> <a href="#"> Hébergements</a></li>
+                <li><a href="#"> Activités</a></li>
+            </ul>
+            <button id="binscription">S'inscrire</button>
             </div>
         </nav>
     </header>
@@ -28,7 +29,12 @@
         <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
         <div id="searchbar">
-            <div> <label for="rechercher"><img src="/Icons/map-marker-alt-solid.svg" alt="position"></label></div> <input type="search" name="Rechercher" id="rechercher"> <button>Rechercher</button> </div>
+            <div>
+                <form action="post" role="search">
+                    <label for="rechercher"> <img src="/Icons/map-marker-alt-solid.svg" alt="position"></label> <input type="search" name="Rechercher" id="rechercher"> <button>Rechercher</button>
+                </form>
+            </div>
+        </div>
         <div id="barrefiltres">
             <h3>Filtres</h3>
             <div id="filtres">
@@ -38,7 +44,7 @@
                 <button class="bf"> <div class="imgb"> <img src="Icons/dog-solid.svg" alt="Chien" class="iconfiltre"></div> <div class="textb">Animaux Domestiques</div></button>
             </div>
         </div>
-        <p id="info"> <span> <img src="Icons/info-circle-solid.svg" alt="info" width="20px"></span> Plus de 500 logements sont disponibles dans cette ville</p>
+        <p id="info"> <span> <img src="Icons/info-circle-solid.svg" alt="info"></span> Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
     <!--fin de la bande de recherche-->
     <div id="containerflex">
@@ -93,7 +99,7 @@
         <!--fin de la section hébergements-->
 
         <aside id="mostpopular">
-            <h1 class="titresection">Les plus populaires <span> <img src="/Icons/chart-line-solid.svg" alt="chart" width="20px"></span></h1>
+            <h1 class="titresection">Les plus populaires <span> <img src="/Icons/chart-line-solid.svg" alt="chart"></span></h1>
             <div id="cartespopular">
                 <article id="popular1" class="popular">
                     <div class="insection2">
