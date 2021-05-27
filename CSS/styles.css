@@ -2,14 +2,13 @@
 body {
     font-family: "raleway";
     margin: 0;
-    padding: 0;
 }
 
 
 /*début header*/
 
 header {
-    padding: 22px;
+    padding: 20px;
     margin: 0;
     height: 100px;
 }
@@ -21,11 +20,8 @@ header {
 /*conatainer nav*/
 
 #navheader {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: 50px 50px / 100px 1fr 80px;
 }
 
 
@@ -33,12 +29,12 @@ header {
 
 #navheader ul {
     padding: 0;
-    order: 2;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    margin-right: -20px;
-    margin-left: -20px;
+    grid-area: 2 / 1 / span 1 / Span 3;
 }
 
 
@@ -46,14 +42,25 @@ header {
 
 #navheader li {
     list-style: none;
-    width: 50%;
     text-align: center;
+    width: 100%;
+    border-bottom: ;
+}
+
+#lih {
+    border-bottom: solid 3px #0065FC;
 }
 
 
 /*liens li header*/
 
-#navheader ul li a {
+#ah {
+    text-decoration: none;
+    color: #0065FC;
+    font-size: 16px;
+}
+
+#aa {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -62,14 +69,19 @@ header {
 
 /*button inscription*/
 
+#containerinscription {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
 #navheader button {
-    order: 1;
+    display: block;
     border: none;
     background-color: white;
     font-weight: bold;
     color: #0065FC;
+    margin-top: 13px;
+    text-align: center;
     font-size: 16px;
-    margin-left:
 }
 
 
@@ -77,6 +89,7 @@ header {
 
 #logosvg {
     height: 50px;
+    grid-area: 1 / 1 / span 1 / span 1;
 }
 
 
@@ -86,7 +99,8 @@ header {
 /*début bandeau*/
 
 #bandeausearch {
-    padding: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 #bandeausearch h1 {
@@ -249,16 +263,22 @@ header {
     margin-bottom: 3px;
 }
 
+.contenu {
+    margin-left: 10px;
+}
+
 article h1 {
     font-size: 16px;
-    margin-left: 10px;
     margin-top: 10px;
 }
 
 article p {
     font-size: 16px;
-    margin-left: 10px;
     margin-top: -10px;
+}
+
+.stars {
+    width: 15px;
 }
 
 strong {
@@ -277,7 +297,6 @@ strong {
 /*container section hébergement*/
 
 #hébergement {
-    order: 2;
     margin: 0;
     background-color: white;
     padding: 35px;
@@ -290,7 +309,7 @@ strong {
 #carteshebergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
@@ -321,7 +340,7 @@ strong {
 
 .imgh {
     margin: auto;
-    min-width: 300px;
+    min-width: 200px;
     height: 114px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -380,7 +399,6 @@ strong {
 /*début dection popular*/
 
 #mostpopular {
-    order: 1;
     width: 100%;
     margin: auto;
     background-color: #f2f2f2;
@@ -398,7 +416,7 @@ strong {
 #cartespopular {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -473,7 +491,7 @@ strong {
 .activitie {
     padding: 0;
     background-color: white;
-    width: 336px;
+    width: ;
     border-radius: 20px;
     margin-top: 15px;
     box-shadow: 0px 0px 2px 2px #f2f2f2;
@@ -493,7 +511,7 @@ strong {
 
 .imga {
     margin: 0;
-    width: 336px;
+    min-width: 200px;
     height: 114px;
     border-radius: 20px 20px 0px 0px;
     background-repeat: no-repeat;
