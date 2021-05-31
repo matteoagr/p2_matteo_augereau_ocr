@@ -44,7 +44,6 @@ header {
     list-style: none;
     text-align: center;
     width: 100%;
-    border-bottom: ;
 }
 
 #lih {
@@ -119,7 +118,7 @@ header {
     display: flex;
     height: 50px;
     max-width: 335px;
-    min-width: 295px;
+    min-width: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px #f2f2f2;
     margin-top: 35px;
@@ -255,7 +254,6 @@ header {
     flex-wrap: wrap;
     margin: 0;
     margin-right: 0;
-    background-color: aqua;
 }
 
 .titresection {
@@ -270,15 +268,21 @@ header {
 article h1 {
     font-size: 16px;
     margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 article p {
+    margin: 0;
     font-size: 16px;
-    margin-top: -10px;
+    margin-bottom: 4px;
 }
 
 .stars {
     width: 15px;
+}
+
+.rating {
+    margin-bottom: 10px;
 }
 
 strong {
@@ -286,9 +290,84 @@ strong {
 }
 
 .souscontainer {
-    padding: 22px;
+    padding: 20px;
+}
+
+.carte {
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px #f2f2f2;
+    border-radius: 20px;
+    margin-top: 15px;
+    max-width: 334px;
+    min-width: 310px;
+}
+
+
+/*début dection popular*/
+
+#mostpopular {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#iconpopular {
+    display: inline-block;
+    width: 20px;
+}
+
+
+/*container des cartes popular*/
+
+#cartespopular {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+/*cartespopular*/
+
+.popular {
+    border: solid white 7px;
+}
+
+
+/*container du contenu des cartes*/
+
+.insection2 {
+    display: flex;
+    flex-wrap: nowrap;
     margin: auto;
 }
+
+
+/*mise en forme du div contenant l'image*/
+
+.imgp {
+    margin: 0;
+    min-width: 125px;
+    height: 135px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#imgp1 {
+    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+#imgp2 {
+    background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+#imgp3 {
+    background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+.ratingp {}
+
+
+/*fin section popular*/
 
 
 /*début section hébergement*/
@@ -297,10 +376,8 @@ strong {
 /*container section hébergement*/
 
 #hébergement {
-    margin: 0;
+    width: 100%;
     background-color: white;
-    padding: 35px;
-    margin-bottom: -30px;
 }
 
 
@@ -308,8 +385,8 @@ strong {
 
 #carteshebergement {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center
 }
 
 
@@ -317,10 +394,6 @@ strong {
 
 .lodge {
     background-color: white;
-    width: auto;
-    border-radius: 20px;
-    margin-top: 15px;
-    box-shadow: 0px 0px 2px 2px #f2f2f2;
     border: solid white 5px;
 }
 
@@ -330,22 +403,17 @@ strong {
 .insection1 {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    border: solid white 5px;
-    overflow-y: hidden;
 }
 
 
 /*mise en forme de toutes les images de la section*/
 
 .imgh {
-    margin: auto;
-    min-width: 200px;
-    height: 114px;
+    height: 117px;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow-y: 2;
 }
 
 
@@ -366,7 +434,7 @@ strong {
 /*hotel les mouettes*/
 
 #imgh3 {
-    background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-image: url("..//images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 
@@ -394,78 +462,6 @@ strong {
     font-size: 16px;
     font-weight: bold
 }
-
-
-/*début dection popular*/
-
-#mostpopular {
-    width: 100%;
-    margin: auto;
-    background-color: #f2f2f2;
-    padding: 22px
-}
-
-#iconpopular {
-    display: inline-block;
-    width: 20px;
-}
-
-
-/*container des cartes popular*/
-
-#cartespopular {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-/*cartespopular*/
-
-.popular {
-    padding: 7px;
-    background-color: white;
-    border-radius: 20px;
-    margin-top: 15px;
-    box-shadow: 0px 0px 2px 2px #f2f2f2;
-}
-
-
-/*container du contenu des cartes*/
-
-.insection2 {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: auto;
-}
-
-
-/*mise en forme du div contenant l'image*/
-
-.imgp {
-    margin: 0;
-    min-width: 125px;
-    height: 135px;
-    border-radius: 20px 0px 0px 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#imgp1 {
-    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-
-#imgp2 {
-    background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-
-#imgp3 {
-    background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
-
-
-/*fin section popular*/
 
 
 /*début section activité*/
@@ -511,7 +507,7 @@ strong {
 
 .imga {
     margin: 0;
-    min-width: 200px;
+    min-width: 100%;
     height: 114px;
     border-radius: 20px 20px 0px 0px;
     background-repeat: no-repeat;
