@@ -259,6 +259,7 @@ header {
 .titresection {
     margin-top: 3px;
     margin-bottom: 3px;
+    text-align: center;
 }
 
 .contenu {
@@ -298,8 +299,7 @@ strong {
     box-shadow: 0px 0px 2px 2px #f2f2f2;
     border-radius: 20px;
     margin-top: 15px;
-    max-width: 334px;
-    min-width: 310px;
+    width: 100%;
 }
 
 
@@ -353,15 +353,15 @@ strong {
 }
 
 #imgp1 {
-    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-image: url("../images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 #imgp2 {
-    background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-image: url("../images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 
 #imgp3 {
-    background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-image: url("../images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
 .ratingp {}
@@ -420,42 +420,42 @@ strong {
 /*auberge de la cannebière*/
 
 #imgh1 {
-    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-image: url("../images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 
 /*hotel du port*/
 
 #imgh2 {
-    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-image: url("../images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 
 /*hotel les mouettes*/
 
 #imgh3 {
-    background-image: url("..//images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-image: url("..//images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
 
 /*hotel de la mer*/
 
 #imgh4 {
-    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-image: url("../images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 
 /*auberge le panier*/
 
 #imgh5 {
-    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-image: url("../images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 
 /*hotel chez amina*/
 
 #imgh6 {
-    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-image: url("../images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 #hébergement>p {
@@ -477,7 +477,7 @@ strong {
 
 #cartesactivities {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -485,9 +485,7 @@ strong {
 /*cartes activités*/
 
 .activitie {
-    padding: 0;
     background-color: white;
-    width: ;
     border-radius: 20px;
     margin-top: 15px;
     box-shadow: 0px 0px 2px 2px #f2f2f2;
@@ -497,9 +495,7 @@ strong {
 /*container du contenu*/
 
 .insection3 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    background-color: white;
 }
 
 
@@ -507,37 +503,36 @@ strong {
 
 .imga {
     margin: 0;
-    min-width: 100%;
+    width: 100%;
     height: 114px;
     border-radius: 20px 20px 0px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 10px;
 }
 
 #imga1 {
-    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-image: url('../images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
 }
 
 #imga2 {
-    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-image: url("../images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 
 #imga3 {
-    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-image: url("../images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 
 #imga4 {
-    background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-image: url("../images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 
 #imga5 {
-    background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-image: url("../images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 
 #imga6 {
-    background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
 
