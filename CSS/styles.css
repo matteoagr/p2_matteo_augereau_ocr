@@ -386,7 +386,7 @@ strong {
 #carteshebergement {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 
@@ -434,7 +434,7 @@ strong {
 /*hotel les mouettes*/
 
 #imgh3 {
-    background-image: url("..//images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-image: url("..//images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 
@@ -467,9 +467,9 @@ strong {
 /*début section activité*/
 
 #activities {
-    order: 3;
+    width: 100%;
     background-color: white;
-    padding: 35px;
+    margin-bottom: 50px;
 }
 
 
@@ -478,7 +478,7 @@ strong {
 #cartesactivities {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 
@@ -535,6 +535,10 @@ strong {
     background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
+#ta {
+    margin: 20px;
+}
+
 
 /*fin de la section activité*/
 
@@ -563,6 +567,7 @@ footer section {
 #footer li {
     list-style: none;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 
