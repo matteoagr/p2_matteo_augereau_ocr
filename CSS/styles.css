@@ -1,632 +1,628 @@
-                                                                                                                                                                @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-                                                                                                                                                                body {
-                                                                                                                                                                    font-family: "raleway";
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                }
-                                                                                                                                                                /*début header*/
-                                                                                                                                                                
-                                                                                                                                                                header {
-                                                                                                                                                                    padding: 20px;
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                    height: 100px;
-                                                                                                                                                                }
-                                                                                                                                                                /*début mise en page header*/
-                                                                                                                                                                /*conatainer nav*/
-                                                                                                                                                                
-                                                                                                                                                                #navheader {
-                                                                                                                                                                    display: grid;
-                                                                                                                                                                    grid-template: 50px 50px / 100px 1fr 80px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container li heaer*/
-                                                                                                                                                                
-                                                                                                                                                                #navheader ul {
-                                                                                                                                                                    padding: 0;
-                                                                                                                                                                    height: 30px;
-                                                                                                                                                                    margin-left: -20px;
-                                                                                                                                                                    margin-right: -20px;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: space-evenly;
-                                                                                                                                                                    grid-area: 2 / 1 / span 1 / span 3;
-                                                                                                                                                                }
-                                                                                                                                                                /*li header*/
-                                                                                                                                                                
-                                                                                                                                                                #navheader li {
-                                                                                                                                                                    list-style: none;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #lih {
-                                                                                                                                                                    border-bottom: solid 3px #0065FC;
-                                                                                                                                                                }
-                                                                                                                                                                /*liens li header*/
-                                                                                                                                                                
-                                                                                                                                                                #ah {
-                                                                                                                                                                    text-decoration: none;
-                                                                                                                                                                    color: #0065FC;
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #aa {
-                                                                                                                                                                    text-decoration: none;
-                                                                                                                                                                    color: black;
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                }
-                                                                                                                                                                /*button inscription*/
-                                                                                                                                                                
-                                                                                                                                                                #containerinscription {
-                                                                                                                                                                    grid-area: 1 / 3 / span 1 / span 1;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #navheader button {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    border: none;
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                    font-weight: bold;
-                                                                                                                                                                    color: #0065FC;
-                                                                                                                                                                    margin-top: 13px;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                }
-                                                                                                                                                                /*logo header*/
-                                                                                                                                                                
-                                                                                                                                                                #logosvg {
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    grid-area: 1 / 1 / span 1 / span 1;
-                                                                                                                                                                }
-                                                                                                                                                                /*fin header*/
-                                                                                                                                                                /*début bandeau*/
-                                                                                                                                                                
-                                                                                                                                                                #bandeausearch {
-                                                                                                                                                                    padding-right: 20px;
-                                                                                                                                                                    padding-left: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #bandeausearch h1 {
-                                                                                                                                                                    font-size: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #bandeausearch h2 {
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                    font-weight: normal;
-                                                                                                                                                                }
-                                                                                                                                                                /*form search (container)*/
-                                                                                                                                                                
-                                                                                                                                                                #search {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    max-width: 335px;
-                                                                                                                                                                    min-width: 200px;
-                                                                                                                                                                    border-radius: 20px;
-                                                                                                                                                                    box-shadow: 0px 0px 2px 2px #f2f2f2;
-                                                                                                                                                                    margin-top: 35px;
-                                                                                                                                                                    margin-bottom: 35px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container icon position*/
-                                                                                                                                                                
-                                                                                                                                                                #search label {
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    width: 54px;
-                                                                                                                                                                    background-color: #F2F2F2;
-                                                                                                                                                                    border-radius: 20px 0px 0 20px;
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #iconposition {
-                                                                                                                                                                    height: 20px;
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    left: 21px;
-                                                                                                                                                                    top: 15px;
-                                                                                                                                                                }
-                                                                                                                                                                /*input rechercher*/
-                                                                                                                                                                
-                                                                                                                                                                #rechercher {
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    width: 235px;
-                                                                                                                                                                    border: none;
-                                                                                                                                                                }
-                                                                                                                                                                /*button rechercher*/
-                                                                                                                                                                
-                                                                                                                                                                #search button {
-                                                                                                                                                                    border: none;
-                                                                                                                                                                    border-radius: 15px;
-                                                                                                                                                                    background-color: #0065FC;
-                                                                                                                                                                    width: 50px;
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                }
-                                                                                                                                                                /*span texte rechercher pour ordinateur*/
-                                                                                                                                                                
-                                                                                                                                                                #searchdeck {
-                                                                                                                                                                    display: none;
-                                                                                                                                                                }
-                                                                                                                                                                /*span container icon loupe pour mobile*/
-                                                                                                                                                                
-                                                                                                                                                                #searchmob {}
-                                                                                                                                                                
-                                                                                                                                                                #iconloupe {
-                                                                                                                                                                    transform: scale(0.6);
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #barrefiltres h3 {
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container filtres*/
-                                                                                                                                                                
-                                                                                                                                                                #filtres {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-wrap: wrap;
-                                                                                                                                                                    justify-content: flex-start;
-                                                                                                                                                                }
-                                                                                                                                                                /*div "button" filtres*/
-                                                                                                                                                                
-                                                                                                                                                                .bf {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: row;
-                                                                                                                                                                    justify-content: flex-start;
-                                                                                                                                                                    align-content: center;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    width: auto;
-                                                                                                                                                                    border: solid;
-                                                                                                                                                                    border-color: #F2F2F2;
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                    border-radius: 50px;
-                                                                                                                                                                    margin: 12px;
-                                                                                                                                                                }
-                                                                                                                                                                /*span container icons*/
-                                                                                                                                                                
-                                                                                                                                                                .imgb {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                    justify-content: center;
-                                                                                                                                                                    width: 53px;
-                                                                                                                                                                    height: 53px;
-                                                                                                                                                                    background-color: #DEEBFF;
-                                                                                                                                                                    border-radius: 100px;
-                                                                                                                                                                }
-                                                                                                                                                                /*span container texte*/
-                                                                                                                                                                
-                                                                                                                                                                .textb {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    margin: 12px;
-                                                                                                                                                                    font-weight: bold;
-                                                                                                                                                                }
-                                                                                                                                                                /*icons*/
-                                                                                                                                                                
-                                                                                                                                                                .iconfiltre {
-                                                                                                                                                                    width: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                /*fin du bandeau*/
-                                                                                                                                                                /*début du contenu de la page*/
-                                                                                                                                                                /*container des sections et aside*/
-                                                                                                                                                                
-                                                                                                                                                                #containerflex {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-wrap: wrap;
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                    margin-right: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .titresection {
-                                                                                                                                                                    margin-top: 3px;
-                                                                                                                                                                    margin-bottom: 3px;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .contenu {
-                                                                                                                                                                    margin-left: 10px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                article h1 {
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                    margin-top: 10px;
-                                                                                                                                                                    margin-bottom: 4px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                article p {
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                    margin-bottom: 4px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .stars {
-                                                                                                                                                                    width: 15px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .rating {
-                                                                                                                                                                    margin-bottom: 10px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                strong {
-                                                                                                                                                                    font-weight: normal;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .souscontainer {
-                                                                                                                                                                    padding: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .carte {
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                    box-shadow: 0px 0px 2px 2px #f2f2f2;
-                                                                                                                                                                    border-radius: 20px;
-                                                                                                                                                                    margin-top: 15px;
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                }
-                                                                                                                                                                /*début dection popular*/
-                                                                                                                                                                
-                                                                                                                                                                #mostpopular {
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    background-color: #f2f2f2;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #iconpopular {
-                                                                                                                                                                    display: inline-block;
-                                                                                                                                                                    width: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container des cartes popular*/
-                                                                                                                                                                
-                                                                                                                                                                #cartespopular {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: column;
-                                                                                                                                                                    align-items: center
-                                                                                                                                                                }
-                                                                                                                                                                /*cartespopular*/
-                                                                                                                                                                
-                                                                                                                                                                .popular {
-                                                                                                                                                                    border: solid white 7px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container du contenu des cartes*/
-                                                                                                                                                                
-                                                                                                                                                                .insection2 {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-wrap: nowrap;
-                                                                                                                                                                    margin: auto;
-                                                                                                                                                                }
-                                                                                                                                                                /*mise en forme du div contenant l'image*/
-                                                                                                                                                                
-                                                                                                                                                                .imgp {
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                    min-width: 125px;
-                                                                                                                                                                    height: 135px;
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    background-size: cover;
-                                                                                                                                                                    background-position: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imgp1 {
-                                                                                                                                                                    background-image: url("../images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imgp2 {
-                                                                                                                                                                    background-image: url("../images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imgp3 {
-                                                                                                                                                                    background-image: url("../images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .ratingp {}
-                                                                                                                                                                /*fin section popular*/
-                                                                                                                                                                /*début section hébergement*/
-                                                                                                                                                                /*container section hébergement*/
-                                                                                                                                                                
-                                                                                                                                                                #hébergement {
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                }
-                                                                                                                                                                /*container des cartes hébergements*/
-                                                                                                                                                                
-                                                                                                                                                                #carteshebergement {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: column;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                }
-                                                                                                                                                                /*cartes hébergements*/
-                                                                                                                                                                
-                                                                                                                                                                .lodge {
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                    border: solid white 5px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container du contenu de la carte*/
-                                                                                                                                                                
-                                                                                                                                                                .insection1 {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: column;
-                                                                                                                                                                }
-                                                                                                                                                                /*mise en forme de toutes les images de la section*/
-                                                                                                                                                                
-                                                                                                                                                                .imgh {
-                                                                                                                                                                    height: 117px;
-                                                                                                                                                                    width: auto;
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    background-size: cover;
-                                                                                                                                                                    background-position: center;
-                                                                                                                                                                }
-                                                                                                                                                                /*auberge de la cannebière*/
-                                                                                                                                                                
-                                                                                                                                                                #imgh1 {
-                                                                                                                                                                    background-image: url("../images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                /*hotel du port*/
-                                                                                                                                                                
-                                                                                                                                                                #imgh2 {
-                                                                                                                                                                    background-image: url("../images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                /*hotel les mouettes*/
-                                                                                                                                                                
-                                                                                                                                                                #imgh3 {
-                                                                                                                                                                    background-image: url("..//images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                /*hotel de la mer*/
-                                                                                                                                                                
-                                                                                                                                                                #imgh4 {
-                                                                                                                                                                    background-image: url("../images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                /*auberge le panier*/
-                                                                                                                                                                
-                                                                                                                                                                #imgh5 {
-                                                                                                                                                                    background-image: url("../images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                /*hotel chez amina*/
-                                                                                                                                                                
-                                                                                                                                                                #imgh6 {
-                                                                                                                                                                    background-image: url("../images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #hébergement>p {
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                    font-weight: bold
-                                                                                                                                                                }
-                                                                                                                                                                /*début section activité*/
-                                                                                                                                                                
-                                                                                                                                                                #activities {
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                    margin-bottom: 50px;
-                                                                                                                                                                }
-                                                                                                                                                                /*container des cartes activités*/
-                                                                                                                                                                
-                                                                                                                                                                #cartesactivities {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: column;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                }
-                                                                                                                                                                /*cartes activités*/
-                                                                                                                                                                
-                                                                                                                                                                .activitie {
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                    border-radius: 20px;
-                                                                                                                                                                    margin-top: 15px;
-                                                                                                                                                                    box-shadow: 0px 0px 2px 2px #f2f2f2;
-                                                                                                                                                                }
-                                                                                                                                                                /*container du contenu*/
-                                                                                                                                                                
-                                                                                                                                                                .insection3 {
-                                                                                                                                                                    background-color: white;
-                                                                                                                                                                }
-                                                                                                                                                                /*mise en forme des div contenant les images en background*/
-                                                                                                                                                                
-                                                                                                                                                                .imga {
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    height: 114px;
-                                                                                                                                                                    border-radius: 20px 20px 0px 0px;
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    background-size: cover;
-                                                                                                                                                                    background-position: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imga1 {
-                                                                                                                                                                    background-image: url('../images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imga2 {
-                                                                                                                                                                    background-image: url("../images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imga3 {
-                                                                                                                                                                    background-image: url("../images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imga4 {
-                                                                                                                                                                    background-image: url("../images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imga5 {
-                                                                                                                                                                    background-image: url("../images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imga6 {
-                                                                                                                                                                    background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #ta {
-                                                                                                                                                                    margin: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                /*fin de la section activité*/
-                                                                                                                                                                /*début footer*/
-                                                                                                                                                                
-                                                                                                                                                                footer {
-                                                                                                                                                                    background-color: #F2F2F2;
-                                                                                                                                                                    padding: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #footer {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-wrap: wrap;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                footer section {
-                                                                                                                                                                    margin-left: 0px
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #footer ul {
-                                                                                                                                                                    padding: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #footer li {
-                                                                                                                                                                    list-style: none;
-                                                                                                                                                                    font-size: 16px;
-                                                                                                                                                                    margin-bottom: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                /*fin footer*/
-                                                                                                                                                                /*ce qui ne change pas au dessus de 640px*/
-                                                                                                                                                                
-                                                                                                                                                                @media only screen and (min-width: 640px) {}
-                                                                                                                                                                /*entre 640 & 1023*/
-                                                                                                                                                                
-                                                                                                                                                                @media only screen and (min-width: 640px and max-width: 1433px) {}
-                                                                                                                                                                
-                                                                                                                                                                @media only screen and (min-width: 640px) and (max-width :1023px) {
-                                                                                                                                                                    #hébergement {
-                                                                                                                                                                        background-color: #F2F2F2;
-                                                                                                                                                                        margin: 25px;
-                                                                                                                                                                        margin: 0;
-                                                                                                                                                                        margin-top: 50px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #carteshebergement {
-                                                                                                                                                                        display: flex;
-                                                                                                                                                                        flex-direction: row;
-                                                                                                                                                                        flex-wrap: wrap;
-                                                                                                                                                                        justify-content: space-evenly;
-                                                                                                                                                                    }
-                                                                                                                                                                    .lodge {
-                                                                                                                                                                        max-width: 250px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #cartespopular {
-                                                                                                                                                                        display: flex;
-                                                                                                                                                                        flex-direction: row;
-                                                                                                                                                                        flex-wrap: nowrap;
-                                                                                                                                                                        overflow-x: scroll;
-                                                                                                                                                                    }
-                                                                                                                                                                    .popular {
-                                                                                                                                                                        min-width: 300px;
-                                                                                                                                                                        margin-right: 25px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #cartesactivities {
-                                                                                                                                                                        display: flex;
-                                                                                                                                                                        flex-direction: row;
-                                                                                                                                                                        justify-content: space-evenly;
-                                                                                                                                                                        flex-wrap: wrap;
-                                                                                                                                                                    }
-                                                                                                                                                                    .activitie {
-                                                                                                                                                                        max-width: 300px
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media only screen and (min-width: 1023px and max-width: 1433px) {
-                                                                                                                                                                    #hébergement {
-                                                                                                                                                                        background-color: #F2F2F2;
-                                                                                                                                                                        border-radius: 20px;
-                                                                                                                                                                        margin: 25px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #cartespopular {
-                                                                                                                                                                        display: flex;
-                                                                                                                                                                        flex-direction: row;
-                                                                                                                                                                        flex-wrap: nowrap;
-                                                                                                                                                                        overflow-x: scroll;
-                                                                                                                                                                    }
-                                                                                                                                                                    .popular {
-                                                                                                                                                                        min-width: 300px;
-                                                                                                                                                                        margin-right: 25px;
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media only screen and (min-width: 1433px) {
-                                                                                                                                                                    #hébergement {
-                                                                                                                                                                        order: 1;
-                                                                                                                                                                        min-width: 911px;
-                                                                                                                                                                        max-width: 60%;
-                                                                                                                                                                        background-color: #F2F2F2;
-                                                                                                                                                                        border-radius: 20px;
-                                                                                                                                                                        margin: 25px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #carteshebergement {
-                                                                                                                                                                        display: flex;
-                                                                                                                                                                        flex-direction: row;
-                                                                                                                                                                        flex-wrap: wrap;
-                                                                                                                                                                        justify-content: center;
-                                                                                                                                                                    }
-                                                                                                                                                                    .lodge {
-                                                                                                                                                                        max-width: 250px;
-                                                                                                                                                                        margin-left: 15px;
-                                                                                                                                                                        margin-right: 15px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #mostpopular {
-                                                                                                                                                                        max-width: 422px;
-                                                                                                                                                                        border-radius: 20px;
-                                                                                                                                                                        order: 2;
-                                                                                                                                                                    }
-                                                                                                                                                                    .popular {
-                                                                                                                                                                        max-width: 347px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities {
-                                                                                                                                                                        order: 3;
-                                                                                                                                                                    }
-                                                                                                                                                                    #cartesactivities {
-                                                                                                                                                                        display: grid;
-                                                                                                                                                                        grid-template: 225px 225px/ 1fr 1fr 1fr;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities1 {
-                                                                                                                                                                        grid-area: 1 / 1 / span 2 / span 1;
-                                                                                                                                                                        height: 450px;
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities2 {
-                                                                                                                                                                        grid-area: 1 / 2 / span 1 / span 1;
-                                                                                                                                                                        height: 240px;
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities3 {
-                                                                                                                                                                        grid-area: 2 / 2 / span 1 / span 1;
-                                                                                                                                                                        height: 168px;
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities4 {
-                                                                                                                                                                        grid-area: 1 / 3 / span 2 / span 1;
-                                                                                                                                                                        height: 450px;
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities5 {
-                                                                                                                                                                        grid-area: 1 / 4 / span 1 / span 1;
-                                                                                                                                                                        height: 168px;
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #activities6 {
-                                                                                                                                                                        grid-area: 2 / 4 / span 1 / span 1;
-                                                                                                                                                                        height: 211px;
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #imga1 {
-                                                                                                                                                                        background-image: url('../images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                        height: 394px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #imga2 {
-                                                                                                                                                                        background-image: url("../images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                        height: 186px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #imga3 {
-                                                                                                                                                                        background-image: url("../images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                        height: 114px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #imga4 {
-                                                                                                                                                                        background-image: url("../images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                        height: 394px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #imga5 {
-                                                                                                                                                                        background-image: url("../images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                        height: 114px;
-                                                                                                                                                                    }
-                                                                                                                                                                    #imga6 {
-                                                                                                                                                                        background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-                                                                                                                                                                        max-width: 310px;
-                                                                                                                                                                        height: 160px;
-                                                                                                                                                                    }
-                                                                                                                                                                }
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ body {
+     font-family: "raleway";
+     margin: 0;
+ }
+ /*début header*/
+ 
+ header {
+     padding: 20px;
+     margin: 0;
+     height: 100px;
+ }
+ /*début mise en page header*/
+ /*conatainer nav*/
+ 
+ #navheader {
+     display: grid;
+     grid-template: 50px 50px / 100px 1fr 80px;
+ }
+ /*container li heaer*/
+ 
+ #navheader ul {
+     padding: 0;
+     height: 30px;
+     margin-left: -20px;
+     margin-right: -20px;
+     display: flex;
+     justify-content: space-evenly;
+     grid-area: 2 / 1 / span 1 / span 3;
+ }
+ /*li header*/
+ 
+ #navheader li {
+     list-style: none;
+     text-align: center;
+     width: 100%;
+ }
+ 
+ #lih {
+     border-bottom: solid 3px #0065FC;
+ }
+ /*liens li header*/
+ 
+ #ah {
+     text-decoration: none;
+     color: #0065FC;
+     font-size: 16px;
+ }
+ 
+ #aa {
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+ }
+ /*button inscription*/
+ 
+ #containerinscription {
+     grid-area: 1 / 3 / span 1 / span 1;
+ }
+ 
+ #navheader button {
+     display: block;
+     border: none;
+     background-color: white;
+     font-weight: bold;
+     color: #0065FC;
+     margin-top: 13px;
+     text-align: center;
+     font-size: 16px;
+ }
+ /*logo header*/
+ 
+ #logosvg {
+     height: 50px;
+     grid-area: 1 / 1 / span 1 / span 1;
+ }
+ /*fin header*/
+ /*début bandeau*/
+ 
+ #bandeausearch {
+     padding-right: 20px;
+     padding-left: 20px;
+ }
+ 
+ #bandeausearch h1 {
+     font-size: 20px;
+ }
+ 
+ #bandeausearch h2 {
+     font-size: 16px;
+     font-weight: normal;
+ }
+ /*form search (container)*/
+ 
+ #search {
+     display: flex;
+     height: 50px;
+     max-width: 335px;
+     min-width: 200px;
+     border-radius: 20px;
+     box-shadow: 0px 0px 2px 2px #f2f2f2;
+     margin-top: 35px;
+     margin-bottom: 35px;
+ }
+ /*container icon position*/
+ 
+ #search label {
+     height: 50px;
+     width: 54px;
+     background-color: #F2F2F2;
+     border-radius: 20px 0px 0 20px;
+     position: relative;
+ }
+ 
+ #iconposition {
+     height: 20px;
+     position: absolute;
+     left: 21px;
+     top: 15px;
+ }
+ /*input rechercher*/
+ 
+ #rechercher {
+     height: 50px;
+     width: 235px;
+     border: none;
+ }
+ /*button rechercher*/
+ 
+ #search button {
+     border: none;
+     border-radius: 15px;
+     background-color: #0065FC;
+     width: 50px;
+     height: 50px;
+ }
+ /*span texte rechercher pour ordinateur*/
+ 
+ #searchdeck {
+     display: none;
+ }
+ /*span container icon loupe pour mobile*/
+ 
+ #searchmob {}
+ 
+ #iconloupe {
+     transform: scale(0.6);
+ }
+ 
+ #barrefiltres h3 {
+     font-size: 16px;
+ }
+ /*container filtres*/
+ 
+ #filtres {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+ }
+ /*div "button" filtres*/
+ 
+ .bf {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-content: center;
+     align-items: center;
+     height: 50px;
+     width: auto;
+     border: solid;
+     border-color: #F2F2F2;
+     background-color: white;
+     border-radius: 50px;
+     margin: 12px;
+ }
+ /*span container icons*/
+ 
+ .imgb {
+     display: block;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 53px;
+     height: 53px;
+     background-color: #DEEBFF;
+     border-radius: 100px;
+ }
+ /*span container texte*/
+ 
+ .textb {
+     display: block;
+     margin: 12px;
+     font-weight: bold;
+ }
+ /*icons*/
+ 
+ .iconfiltre {
+     width: 20px;
+ }
+ /*fin du bandeau*/
+ /*début du contenu de la page*/
+ /*container des sections et aside*/
+ 
+ #containerflex {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     margin: 0;
+     margin-right: 0;
+ }
+ 
+ .titresection {
+     margin-top: 3px;
+     margin-bottom: 3px;
+     text-align: center;
+ }
+ 
+ .contenu {
+     margin-left: 10px;
+ }
+ 
+ article h1 {
+     font-size: 16px;
+     margin-top: 10px;
+     margin-bottom: 4px;
+ }
+ 
+ article p {
+     margin: 0;
+     font-size: 16px;
+     margin-bottom: 4px;
+ }
+ 
+ .stars {
+     width: 15px;
+ }
+ 
+ .rating {
+     margin-bottom: 10px;
+ }
+ 
+ strong {
+     font-weight: normal;
+ }
+ 
+ .souscontainer {
+     padding: 20px;
+ }
+ 
+ .carte {
+     background-color: white;
+     box-shadow: 0px 0px 2px 2px #f2f2f2;
+     border-radius: 20px;
+     margin-top: 15px;
+     width: 100%;
+ }
+ /*début dection popular*/
+ 
+ #mostpopular {
+     width: 100%;
+     background-color: #f2f2f2;
+ }
+ 
+ #iconpopular {
+     display: inline-block;
+     width: 20px;
+ }
+ /*container des cartes popular*/
+ 
+ #cartespopular {
+     display: flex;
+     flex-direction: column;
+     align-items: center
+ }
+ /*cartespopular*/
+ 
+ .popular {
+     border: solid white 7px;
+ }
+ /*container du contenu des cartes*/
+ 
+ .insection2 {
+     display: flex;
+     flex-wrap: nowrap;
+     margin: auto;
+ }
+ /*mise en forme du div contenant l'image*/
+ 
+ .imgp {
+     margin: 0;
+     min-width: 125px;
+     height: 135px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ #imgp1 {
+     background-image: url("../images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+ }
+ 
+ #imgp2 {
+     background-image: url("../images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg");
+ }
+ 
+ #imgp3 {
+     background-image: url("../images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+ }
+ 
+ .ratingp {}
+ /*fin section popular*/
+ /*début section hébergement*/
+ /*container section hébergement*/
+ 
+ #hébergement {
+     width: 100%;
+     background-color: white;
+ }
+ /*container des cartes hébergements*/
+ 
+ #carteshebergement {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ /*cartes hébergements*/
+ 
+ .lodge {
+     background-color: white;
+     border: solid white 5px;
+ }
+ /*container du contenu de la carte*/
+ 
+ .insection1 {
+     display: flex;
+     flex-direction: column;
+ }
+ /*mise en forme de toutes les images de la section*/
+ 
+ .imgh {
+     height: 117px;
+     width: auto;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ /*auberge de la cannebière*/
+ 
+ #imgh1 {
+     background-image: url("../images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+ }
+ /*hotel du port*/
+ 
+ #imgh2 {
+     background-image: url("../images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+ }
+ /*hotel les mouettes*/
+ 
+ #imgh3 {
+     background-image: url("..//images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+ }
+ /*hotel de la mer*/
+ 
+ #imgh4 {
+     background-image: url("../images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+ }
+ /*auberge le panier*/
+ 
+ #imgh5 {
+     background-image: url("../images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+ }
+ /*hotel chez amina*/
+ 
+ #imgh6 {
+     background-image: url("../images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+ }
+ 
+ #hébergement>p {
+     font-size: 16px;
+     font-weight: bold
+ }
+ /*début section activité*/
+ 
+ #activities {
+     width: 100%;
+     background-color: white;
+     margin-bottom: 50px;
+ }
+ /*container des cartes activités*/
+ 
+ #cartesactivities {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ /*cartes activités*/
+ 
+ .activitie {
+     background-color: white;
+     border-radius: 20px;
+     margin-top: 15px;
+     box-shadow: 0px 0px 2px 2px #f2f2f2;
+ }
+ /*container du contenu*/
+ 
+ .insection3 {
+     background-color: white;
+ }
+ /*mise en forme des div contenant les images en background*/
+ 
+ .imga {
+     margin: 0;
+     width: 100%;
+     height: 114px;
+     border-radius: 20px 20px 0px 0px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ #imga1 {
+     background-image: url('../images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+ }
+ 
+ #imga2 {
+     background-image: url("../images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+ }
+ 
+ #imga3 {
+     background-image: url("../images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+ }
+ 
+ #imga4 {
+     background-image: url("../images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+ }
+ 
+ #imga5 {
+     background-image: url("../images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+ }
+ 
+ #imga6 {
+     background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+ }
+ 
+ #ta {
+     margin: 20px;
+ }
+ /*fin de la section activité*/
+ /*début footer*/
+ 
+ footer {
+     background-color: #F2F2F2;
+     padding: 20px;
+ }
+ 
+ #footer {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ footer section {
+     margin-left: 0px
+ }
+ 
+ #footer ul {
+     padding: 0;
+ }
+ 
+ #footer li {
+     list-style: none;
+     font-size: 16px;
+     margin-bottom: 20px;
+ }
+ /*fin footer*/
+ 
+ @media only screen and (min-width: 640px)
+ /*ce qui ne change pas au dessus de 640px*/
+ 
+ {}
+ 
+ @media only screen and (min-width: 640px) and (max-width: 1400px)
+ /*entre 640 & 1433*/
+ 
+ {
+     #cartespopular {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         overflow-x: scroll;
+     }
+     .popular {
+         min-width: 300px;
+         margin-right: 25px;
+         margin-left: 25px;
+     }
+     #hébergement {
+         background-color: #F2F2F2;
+         margin-top: 25px;
+     }
+     #carteshebergement {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+     .lodge {
+         max-width: 320px;
+         margin-left: 25px;
+         margin-right: 25px;
+     }
+     #cartesactivities {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+     .activitie {
+         max-width: 320px;
+         margin-left: 25px;
+         margin-right: 25px;
+     }
+ }
+ /* @media only screen and (min-width: 640px) and (max-width :1023px)
+ /*entre 640 & 1023*/
+ 
+ {}
+ 
+ @media only screen and (min-width: 1023px) and (max-width: 1400px)
+ /*entre 1023 & 1433*/
+ 
+ {}
+ 
+ @media only screen and (min-width: 1400px) {
+     #hébergement {
+         order: 1;
+         min-width: 911px;
+         max-width: 60%;
+         background-color: #F2F2F2;
+         border-radius: 20px;
+     }
+     #carteshebergement {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+     .lodge {
+         max-width: 250px;
+         margin-left: 15px;
+         margin-right: 15px;
+     }
+     #mostpopular {
+         max-width: 422px;
+         border-radius: 20px;
+         order: 2;
+     }
+     .popular {
+         max-width: 347px;
+     }
+     #activities {
+         order: 3;
+     }
+     #cartesactivities {
+         display: grid;
+         grid-template: 225px 225px/ 1fr 1fr 1fr;
+     }
+     #activities1 {
+         grid-area: 1 / 1 / span 2 / span 1;
+         height: 450px;
+         max-width: 310px;
+     }
+     #activities2 {
+         grid-area: 1 / 2 / span 1 / span 1;
+         height: 240px;
+         max-width: 310px;
+     }
+     #activities3 {
+         grid-area: 2 / 2 / span 1 / span 1;
+         height: 168px;
+         max-width: 310px;
+     }
+     #activities4 {
+         grid-area: 1 / 3 / span 2 / span 1;
+         height: 450px;
+         max-width: 310px;
+     }
+     #activities5 {
+         grid-area: 1 / 4 / span 1 / span 1;
+         height: 168px;
+         max-width: 310px;
+     }
+     #activities6 {
+         grid-area: 2 / 4 / span 1 / span 1;
+         height: 211px;
+         max-width: 310px;
+     }
+     #imga1 {
+         background-image: url('../images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+         max-width: 310px;
+         height: 394px;
+     }
+     #imga2 {
+         background-image: url("../images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+         max-width: 310px;
+         height: 186px;
+     }
+     #imga3 {
+         background-image: url("../images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+         max-width: 310px;
+         height: 114px;
+     }
+     #imga4 {
+         background-image: url("../images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+         max-width: 310px;
+         height: 394px;
+     }
+     #imga5 {
+         background-image: url("../images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+         max-width: 310px;
+         height: 114px;
+     }
+     #imga6 {
+         background-image: url("../images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+         max-width: 310px;
+         height: 160px;
+     }
+ }
