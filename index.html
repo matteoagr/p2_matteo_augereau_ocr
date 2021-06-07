@@ -16,7 +16,7 @@
             <a href="index.html" id="logohome">
                 <img src="images/logo/Reservia.svg" alt="logo reservia" id="logosvg">
             </a>
-            <div id="containerinscription"><button id="binscription">S'inscrire</button></div>
+            <div id="containerinscription"><a id="binscription" href="#">S'inscrire</a></div>
             <ul id="navigation">
                 <li id="lih"> <a href="#" id="ah"> Hébergements</a></li>
                 <li id="lia"><a href="#" id="aa"> Activités</a></li>
@@ -26,13 +26,14 @@
     </header>
     <!--fin du header-->
 
-    <div id="bandeausearch">
+    <div id="bandeausearch" class="container">
         <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
         <div id="searchbar">
             <div>
                 <form action="#" method="POST" role="search" id="search">
-                    <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher"> <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
+                    <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher">
+                    <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
                 </form>
             </div>
         </div>
@@ -53,12 +54,12 @@
 
         <aside id="mostpopular" class="container">
             <div class="souscontainer">
-                <h1 class="titresection">Les plus populaires <span> <img src="Icons/chart-line-solid.svg" alt="chart" id="iconpopular"></span></h1>
+                <h1 class="titresection" id="titresection1"><span id="titrepopular">Les plus populaires </span><span> <img src="Icons/chart-line-solid.svg" alt="chart" id="iconpopular"></span></h1>
                 <div id="cartespopular">
                     <article id="popular1" class="popular carte">
                         <div class="insection2">
                             <div class="imgp" id="imgp1"></div>
-                            <div class="contenu">
+                            <div class="contenup contenu">
                                 <h1>Hôtel le soleil du matin</h1>
                                 <p>Nuit à partir de <strong>128€</strong></p>
                                 <div class="rating ratingp">
@@ -74,7 +75,7 @@
                     <article id="popular2" class="popular carte">
                         <div class="insection2">
                             <div class="imgp" id="imgp2"></div>
-                            <div class="contenu">
+                            <div class="contenup contenu">
                                 <h1>Au coeur de l'eau Chambres d'hôtes</h1>
                                 <p>Nuit à partir de <strong>71€</strong></p>
                                 <div class="rating ratingp">
@@ -90,7 +91,7 @@
                     <article id="popular3" class="popular carte">
                         <div class="insection2">
                             <div class="imgp" id="imgp3"></div>
-                            <div class="contenu">
+                            <div class="contenup contenu">
                                 <h1>Hôtel Tout bleu et Blanc</h1>
                                 <p>Nuit à partir de <strong>68€</strong></p>
                                 <div class="rating ratingp">
@@ -128,70 +129,80 @@
                     <article id="lodge2" class="lodge carte">
                         <div class="insection1">
                             <div class="imgh" id="imgh2"></div>
-                            <h1>Hotel du port</h1>
-                            <p>Nuit à partir de <strong>52€</strong></p>
-                            <div class="rating ratingh">
-                                <a href="#5" title="Donner 5 étoiles"> <img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
-                                <a href="#4" title="Donner 4 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
-                                <a href="#3" title="Donner 3 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
-                                <a href="#2" title="Donner 2 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
-                                <a href="#1" title="Donner 1 étoile"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
+                            <div class="contenul contenu">
+                                <h1>Hotel du port</h1>
+                                <p>Nuit à partir de <strong>52€</strong></p>
+                                <div class="rating ratingh">
+                                    <a href="#5" title="Donner 5 étoiles"> <img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
+                                    <a href="#4" title="Donner 4 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
+                                    <a href="#3" title="Donner 3 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
+                                    <a href="#2" title="Donner 2 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
+                                    <a href="#1" title="Donner 1 étoile"><img class="stars" src="/Icons/star-solid-blue.svg" alt="star-solid"></a>
+                                </div>
                             </div>
                         </div>
                     </article>
                     <article id="lodge3" class=" lodge carte ">
                         <div class="insection1 ">
                             <div class="imgh " id="imgh3"></div>
-                            <h1>Hotel de la mouette</h1>
-                            <p>Nuit à partir de <strong>76€</strong></p>
-                            <div class="rating ratingh">
-                                <a href="#5 " title="Donner 5 étoiles "> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
-                                <a href="#4 " title="Donner 4 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
-                                <a href="#3 " title="Donner 3 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
-                                <a href="#2 " title="Donner 2 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
-                                <a href="#1 " title="Donner 1 étoile "><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid "></a>
+                            <div class="contenul contenu">
+                                <h1>Hotel de la mouette</h1>
+                                <p>Nuit à partir de <strong>76€</strong></p>
+                                <div class="rating ratingh">
+                                    <a href="#5 " title="Donner 5 étoiles "> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
+                                    <a href="#4 " title="Donner 4 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
+                                    <a href="#3 " title="Donner 3 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
+                                    <a href="#2 " title="Donner 2 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid "></a>
+                                    <a href="#1 " title="Donner 1 étoile "><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid "></a>
+                                </div>
                             </div>
                         </div>
                     </article>
                     <article id="lodge4" class="lodge carte">
                         <div class="insection1 ">
                             <div class="imgh" id="imgh4"></div>
-                            <h1>Hotel de la mer</h1>
-                            <p>Nuit à partir de <strong>46€</strong></p>
-                            <div class="rating ratingh">
-                                <a href="#5" title="Donner 5 étoiles"> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#4" title="Donner 4 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#3" title="Donner 3 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#2" title="Donner 2 étoiles"><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid"></a>
-                                <a href="#1" title="Donner 1 étoile"><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid"></a>
+                            <div class="contenul contenu">
+                                <h1>Hotel de la mer</h1>
+                                <p>Nuit à partir de <strong>46€</strong></p>
+                                <div class="rating ratingh">
+                                    <a href="#5" title="Donner 5 étoiles"> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#4" title="Donner 4 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#3" title="Donner 3 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#2" title="Donner 2 étoiles"><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid"></a>
+                                    <a href="#1" title="Donner 1 étoile"><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid"></a>
+                                </div>
                             </div>
                         </div>
                     </article>
                     <article id="lodge5" class=" lodge carte">
                         <div class="insection1 ">
                             <div class="imgh" id="imgh5"></div>
-                            <h1>Auberge le Panier</h1>
-                            <p>Nuit à partir de <strong>23€</strong></p>
-                            <div class="rating ratingh">
-                                <a href="#5" title="Donner 5 étoiles "> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#4" title="Donner 4 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#3" title="Donner 3 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#2" title="Donner 2 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#1" title="Donner 1 étoile "><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid"></a>
+                            <div class="contenul contenu">
+                                <h1>Auberge le Panier</h1>
+                                <p>Nuit à partir de <strong>23€</strong></p>
+                                <div class="rating ratingh">
+                                    <a href="#5" title="Donner 5 étoiles "> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#4" title="Donner 4 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#3" title="Donner 3 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#2" title="Donner 2 étoiles "><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#1" title="Donner 1 étoile "><img class="stars" src="/Icons/star-solid-grey.svg " alt="star-solid"></a>
+                                </div>
                             </div>
                         </div>
                     </article>
                     <article id="lodge6" class="lodge carte">
                         <div class="insection1">
                             <div class="imgh" id="imgh6"></div>
-                            <h1>Hôtel chez Amina</h1>
-                            <p>Nuit à partir de <strong>96€</strong></p>
-                            <div class="rating ratingh">
-                                <a href="#5" title="Donner 5 étoiles"> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#4" title="Donner 4 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#3" title="Donner 3 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#2" title="Donner 2 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
-                                <a href="#1" title="Donner 1 étoile"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                            <div class="contenul contenu">
+                                <h1>Hôtel chez Amina</h1>
+                                <p>Nuit à partir de <strong>96€</strong></p>
+                                <div class="rating ratingh">
+                                    <a href="#5" title="Donner 5 étoiles"> <img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#4" title="Donner 4 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#3" title="Donner 3 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#2" title="Donner 2 étoiles"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                    <a href="#1" title="Donner 1 étoile"><img class="stars" src="/Icons/star-solid-blue.svg " alt="star-solid"></a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -201,7 +212,7 @@
         </section>
         <!--fin de la section hébergements-->
 
-        <section id="activities">
+        <section id="activities" class="container">
             <div class="souscontainer">
                 <h1 class="titresection">Activités à Marseille</h1>
                 <div id="cartesactivities">
@@ -209,7 +220,7 @@
                         <div class="insection3">
                             <div class="imga" id="imga1"></div>
                             <div>
-                                <h1 id="ta">Vieux Port</h1>
+                                <h1 class="ta">Vieux Port</h1>
                             </div>
                         </div>
                     </article>
@@ -217,7 +228,7 @@
                         <div class="insection3 ">
                             <div class="imga" id="imga2"></div>
                             <div>
-                                <h1 id="ta">Fort de Pomègues</h1>
+                                <h1 class="ta">Fort de Pomègues</h1>
                             </div>
                         </div>
                     </article>
@@ -225,7 +236,7 @@
                         <div class="insection3">
                             <div class="imga" id="imga3"></div>
                             <div>
-                                <h1 id="ta">Île de Frioul</h1>
+                                <h1 class="ta">Île de Frioul</h1>
                             </div>
                         </div>
                     </article>
@@ -233,7 +244,7 @@
                         <div class="insection3 ">
                             <div class="imga" id="imga4"></div>
                             <div>
-                                <h1 id="ta">Parc National des Calanques</h1>
+                                <h1 class="ta">Parc National des Calanques</h1>
                             </div>
                         </div>
                     </article>
@@ -241,7 +252,7 @@
                         <div class="insection3 ">
                             <div class="imga" id="imga5"></div>
                             <div>
-                                <h1 id="ta">Notre-Dame-de-la-Garde</h1>
+                                <h1 class="ta">Notre-Dame-de-la-Garde</h1>
                             </div>
                         </div>
                     </article>
@@ -249,7 +260,7 @@
                         <div class="insection3 ">
                             <div class="imga" id="imga6"></div>
                             <div>
-                                <h1 id="ta">Parc Longchamp</h1>
+                                <h1 class="ta">Parc Longchamp</h1>
                             </div>
                         </div>
                     </article>
