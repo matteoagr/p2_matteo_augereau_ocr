@@ -29,8 +29,8 @@
     <div id="bandeausearch" class="container">
         <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
-        <div id="searchbar">
-            <div>
+        <div id="containersearchbar">
+            <div id="souscontainersearchbar">
                 <form action="#" method="POST" role="search" id="search">
                     <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher">
                     <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
@@ -52,8 +52,8 @@
     <div id="containerflex">
 
 
-        <aside id="mostpopular" class="container">
-            <div class="souscontainer">
+        <aside id="mostpopular" class="container maincontainer">
+            <div class="souscontainer" id="souscontainerp">
                 <h1 class="titresection" id="titresection1"><span id="titrepopular">Les plus populaires </span><span> <img src="Icons/chart-line-solid.svg" alt="chart" id="iconpopular"></span></h1>
                 <div id="cartespopular">
                     <article id="popular1" class="popular carte">
@@ -108,7 +108,7 @@
             </div>
         </aside>
         <!--fin de l'aside les plus populaires-->
-        <section id="hébergement" class="container">
+        <section id="hébergement" class="container maincontainer">
             <div class="souscontainer">
                 <h1 class="titresection">Hébergements à Marseille</h1>
                 <div id="carteshebergement">
@@ -207,12 +207,12 @@
                         </div>
                     </article>
                 </div>
-                <p>Afficher plus...</p>
+                <a href="#" id="watchmore">Afficher plus...</a>
             </div>
         </section>
         <!--fin de la section hébergements-->
 
-        <section id="activities" class="container">
+        <section id="activities" class="container maincontainer">
             <div class="souscontainer">
                 <h1 class="titresection">Activités à Marseille</h1>
                 <div id="cartesactivities">
