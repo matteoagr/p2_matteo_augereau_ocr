@@ -18,8 +18,8 @@
             </a>
             <div id="containerinscription"><a id="binscription" href="#">S'inscrire</a></div>
             <ul id="navigation">
-                <li id="lih"> <a href="#" id="ah"> Hébergements</a></li>
-                <li id="lia"><a href="#" id="aa"> Activités</a></li>
+                <li id="lih"> <a href="#hébergement" id="ah"> Hébergements</a></li>
+                <li id="lia"><a href="#activities" id="aa"> Activités</a></li>
             </ul>
 
         </nav>
@@ -27,26 +27,28 @@
     <!--fin du header-->
 
     <div id="bandeausearch" class="container">
-        <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
-        <h2>En plein centre ville ou en pleine nature</h2>
-        <div id="containersearchbar">
-            <div id="souscontainersearchbar">
-                <form action="#" method="POST" role="search" id="search">
-                    <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher">
-                    <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
-                </form>
+        <div id="souscontainerbandeau" class="souscontainer">
+            <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
+            <div id="containersearchbar">
+                <div id="souscontainersearchbar">
+                    <form action="#" method="POST" role="search" id="search">
+                        <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher">
+                        <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div id="barrefiltres">
-            <h3>Filtres</h3>
-            <div id="filtres">
-                <div class="bf"> <span class="imgb"> <img src="Icons/money-bill-wave-solid.svg" alt="billet" class="iconfiltre"></span> <span class="textb">Économique</span></div>
-                <div class="bf"> <span class="imgb"> <img src="Icons/child-solid.svg" alt="Enfant" class="iconfiltre"></span> <span class="textb">Familial</span> </div>
-                <div class="bf"> <span class="imgb"> <img src="Icons/heart-solid.svg" alt="Heart" class="iconfiltre"></span> <span class="textb">Romantique</span> </div>
-                <div class="bf"> <span class="imgb"> <img src="Icons/dog-solid.svg" alt="Chien" class="iconfiltre"></span> <span class="textb">Animaux Domestiques</span></div>
+            <div id="barrefiltres">
+                <h3>Filtres</h3>
+                <div id="filtres">
+                    <div class="bf"> <span class="imgb"> <img src="Icons/money-bill-wave-solid.svg" alt="billet" class="iconfiltre"></span> <span class="textb">Économique</span></div>
+                    <div class="bf"> <span class="imgb"> <img src="Icons/child-solid.svg" alt="Enfant" class="iconfiltre"></span> <span class="textb">Familial</span> </div>
+                    <div class="bf"> <span class="imgb"> <img src="Icons/heart-solid.svg" alt="Heart" class="iconfiltre"></span> <span class="textb">Romantique</span> </div>
+                    <div class="bf"> <span class="imgb"> <img src="Icons/dog-solid.svg" alt="Chien" class="iconfiltre"></span> <span class="textb">Animaux Domestiques</span></div>
+                </div>
             </div>
+            <p id="info"> <span> <img src="Icons/info-circle-solid.svg" alt="info" class="iconfiltre"></span> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-        <p id="info"> <span> <img src="Icons/info-circle-solid.svg" alt="info" class="iconfiltre"></span> Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
     <!--fin de la bande de recherche-->
     <div id="containerflex">
@@ -233,6 +235,7 @@
                         </div>
                     </article>
                     <article id="activities3" class="activitie carte">
+
                         <div class="insection3">
                             <div class="imga" id="imga3"></div>
                             <div>
