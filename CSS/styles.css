@@ -644,7 +644,7 @@ footer {
     }
     .popular {
         min-width: 300px;
-        margin-right:
+        margin-right: 15px;
     }
 }
 
@@ -674,10 +674,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-    .container {
-        display: flex;
-        justify-content: center
-    }
+    .container {}
     .souscontainer {
         display: flex;
         flex-direction: column;
@@ -688,9 +685,13 @@ footer {
     }
     #hébergement {
         margin-top: 20px;
+        display: flex;
+        justify-content: center
     }
     #activities {
         margin-top: 20px;
+        display: flex;
+        justify-content: center
     }
     #carteshebergement,
     #cartesactivities {
