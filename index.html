@@ -19,43 +19,43 @@
             </a>
             <div id="containerinscription"><a id="binscription" href="#">S'inscrire</a></div>
             <ul id="navigation">
-                <li id="lih"> <a href="#hébergement" id="ah"> Hébergements</a></li>
-                <li id="lia"><a href="#activities" id="aa"> Activités</a></li>
+                <li id="lih"> <a href="#hébergement" id="ah" class="nava"> Hébergements</a></li>
+                <li id="lia"><a href="#activities" id="aa" class="nava"> Activités</a></li>
             </ul>
 
         </nav>
     </header>
     <!--fin du header-->
-    <div id="containerbandeau">
-        <div id="bandeausearch" class="container">
-            <div id="souscontainerbandeau" class="souscontainer">
-                <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
-                <h2>En plein centre ville ou en pleine nature</h2>
-                <div id="containersearchbar">
-                    <div id="souscontainersearchbar">
-                        <form action="#" method="POST" role="search" id="search">
-                            <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher" placeholder="Marseille, France">
-                            <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
-                        </form>
-                    </div>
+
+    <div id="bandeausearch" class="container">
+        <div id="souscontainerbandeau" class="souscontainer">
+            <h1>Trouvez votre hébergement pour des vaccances de rêve !</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
+            <div id="containersearchbar">
+                <div id="souscontainersearchbar">
+                    <form action="#" method="POST" role="search" id="search">
+                        <label for="rechercher"> <img src="Icons/map-marker-alt-solid.svg" alt="position" id="iconposition"></label> <input type="search" name="Rechercher" id="rechercher" value="Marseille, France">
+                        <button> <span id="searchmob"> <img src="Icons/search-solid.svg" alt="loupe" id="iconloupe"></span><span id="searchdeck"> Rechercher </span></button>
+                    </form>
                 </div>
-                <div id="barrefiltres">
-                    <h3>Filtres</h3>
-                    <div id="filtres">
-                        <a class="bf" href="#"> <span class="imgb"> <img src="Icons/money-bill-wave-solid.svg" alt="billet" class="iconfiltre"></span> <span class="textb">Économique</span></a>
-                        <a class="bf" href="#"> <span class="imgb"> <img src="Icons/child-solid.svg" alt="Enfant" class="iconfiltre"></span> <span class="textb">Familial</span> </a>
-                        <a class="bf" href="#"> <span class="imgb"> <img src="Icons/heart-solid.svg" alt="Heart" class="iconfiltre"></span> <span class="textb">Romantique</span> </a>
-                        <a class="bf" href="#"> <span class="imgb"> <img src="Icons/dog-solid.svg" alt="Chien" class="iconfiltre"></span> <span class="textb">Animaux Domestiques</span></a>
-                    </div>
+            </div>
+            <div id="barrefiltres">
+                <h3>Filtres</h3>
+                <div id="filtres">
+                    <a class="bf" href="#"> <span class="imgb"> <img src="Icons/money-bill-wave-solid.svg" alt="billet" class="iconfiltre"></span> <span class="textb">Économique</span></a>
+                    <a class="bf" href="#"> <span class="imgb"> <img src="Icons/child-solid.svg" alt="Enfant" class="iconfiltre"></span> <span class="textb">Familial</span> </a>
+                    <a class="bf" href="#"> <span class="imgb"> <img src="Icons/heart-solid.svg" alt="Heart" class="iconfiltre"></span> <span class="textb">Romantique</span> </a>
+                    <a class="bf" href="#"> <span class="imgb"> <img src="Icons/dog-solid.svg" alt="Chien" class="iconfiltre"></span> <span class="textb">Animaux Domestiques</span></a>
                 </div>
-                <p id="info"> <span> <img src="Icons/info-circle-solid.svg" alt="info" class="iconfiltre"></span> Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+            <div id="info"> <img src="Icons/info-circle-solid.svg" alt="info" class="iconfiltre" id="iconinfo">
+                <p id="tinfo">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </div>
     </div>
+
     <!--fin de la bande de recherche-->
     <main id="containerflex">
-
-
         <aside id="mostpopular" class="container maincontainer">
             <div class="souscontainer" id="souscontainerp">
                 <h2 class="titresection" id="titresection1"><span id="titrepopular">Les plus populaires </span><span> <img src="Icons/chart-line-solid.svg" alt="chart" id="iconpopular"></span></h2>
@@ -295,7 +295,7 @@
                             <div class="insection3 ">
                                 <div class="imga" id="imga6"></div>
                                 <div>
-                                    <h3> class="ta">Parc Longchamp</h3>
+                                    <h3 class="ta">Parc Longchamp</h3>
                                 </div>
                             </div>
                         </a>
