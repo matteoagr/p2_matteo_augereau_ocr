@@ -300,6 +300,7 @@
      justify-content: center;
      flex-wrap: wrap;
      max-width: 1695px;
+     width: 100%;
  }
  
  .cardlink {
