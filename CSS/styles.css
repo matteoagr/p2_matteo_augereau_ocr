@@ -157,7 +157,8 @@
  }
  
  #iconposition {
-     transform: scale(0.3)
+     /*transform: scale(0.3);*/
+     width: 15px;
  }
  /* search input */
  
@@ -201,11 +202,11 @@
  }
  
  #iconloupe {
-     transform: scale(0.5);
+     width: 18px;
  }
  
  #iconloupe:hover {
-     transform: scale(0.6);
+     transform: scale(0.8);
  }
  
  #barrefiltres h3 {
@@ -289,14 +290,21 @@
  
  #containerflex {
      display: flex;
-     flex-wrap: wrap;
      justify-content: center;
      margin: 0;
      margin-top: 11px;
  }
  
+ #souscontainerflex {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     max-width: 1695px;
+ }
+ 
  .cardlink {
      text-decoration: none;
+     color: black;
  }
  
  .cardlink:visited {
@@ -712,7 +720,7 @@
  
  {
      #navheader {
-         grid-template: "logo no nav inscription" 50px / 100px 1fr 400px 100px
+         grid-template: "logo nav inscription" 50px / 1fr 400px 100px
      }
      #navheader ul {
          justify-content: flex-end;
@@ -773,41 +781,49 @@
      }
      #cartesactivities {
          display: grid;
-         grid-template: 222.5px 222.5px/ 1fr 43px 1fr 43px 1fr 43px 1fr;
+         grid-template: "a1 a2 a4 a5" 222.5px "a1 a3 a4 a6" 222.5px / 1fr 1fr 1fr 1fr;
+         column-gap: 43px;
+         /*222.5px 222.5px/ 1fr 43px 1fr 43px 1fr 43px 1fr;*/
      }
      .activitie {
          min-width: 250px;
          margin: 0;
      }
      #activities1 {
-         grid-area: 1 / 1 / span 2 / span 1;
+         grid-area: a1;
+         /*1 / 1 / span 2 / span 1;*/
          height: 445px;
          align-self: flex-start;
          margin: 0;
      }
      #activities2 {
-         grid-area: 1 / 3 / span 1 / span 1;
+         grid-area: a2;
+         /*1 / 3 / span 1 / span 1;*/
          height: 236px;
          align-self: flex-start;
          margin-right: 30px;
      }
      #activities3 {
-         grid-area: 2 / 3 / span 1 / span 1;
+         grid-area: a3;
+         /*2 / 3 / span 1 / span 1;*/
          height: 163px;
          align-self: flex-end;
      }
      #activities4 {
-         grid-area: 1 / 5 / span 2 / span 1;
+         grid-area: a4;
+         /*1 / 5 / span 2 / span 1;*/
          height: 445px;
          align-self: flex-end;
      }
      #activities5 {
-         grid-area: 1 / 7 / span 1 / span 1;
+         grid-area: a5;
+         /*1 / 7 / span 1 / span 1;*/
          height: 195px;
          align-self: flex-start;
      }
      #activities6 {
-         grid-area: 2 / 7 / span 1 / span 1;
+         grid-area: a6;
+         /*2 / 7 / span 1 / span 1;*/
          height: 209px;
          margin-bottom: 0;
          align-self: flex-end;
